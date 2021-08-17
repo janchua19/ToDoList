@@ -1,0 +1,11 @@
+.TodoList-Container{
+    margin-top: 20px;
+    background-color: #e9afa3;
+    max-width:500px;
+    margin-left: 35%;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 5px;
+}
