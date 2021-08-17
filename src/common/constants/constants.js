@@ -2,7 +2,7 @@ export const initialTodoList = [
     {
         id: "1",
         text: "SAMPLE 1",
-        done: true
+        done: false
     },
     {
         id: "2",
