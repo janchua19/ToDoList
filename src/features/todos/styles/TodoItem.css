@@ -5,11 +5,11 @@
 }
 
 .TodoItem-Table{
-    padding-top: 5px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 35px;
     border-color: black;
-    max-width: 90%;
-    margin-left: 5%;
+    max-width: 95%;
+    margin-left: 2.5%;
     background-color: #ecd1cd;
     border-radius: 5px;
     position: relative;

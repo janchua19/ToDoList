@@ -13,7 +13,7 @@ function App() {
           <Layout>
             <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
               <div className="logo" />
-              <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
+              <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
                 <Menu.Item key="1"><Link to = "/">Todo List</Link></Menu.Item>
                 <Menu.Item key="2"><Link to = "/done">Done List</Link></Menu.Item>
               </Menu>
@@ -29,7 +29,7 @@ function App() {
               </div>
             </Content>
 
-            <Footer className="footer" style={{ textAlign: 'center', maxHeight:50}}>ITA-6 ©2021 Created by Jan</Footer>
+            <Footer className="footer" style={{ textAlign: 'center', maxHeight:55, paddingBottom:20, paddingTop:20, backgroundColor:"#001529", color:"white"}}>ITA-6 ©2021 Created by Jan</Footer>
           </Layout>
       </BrowserRouter>
     </div>

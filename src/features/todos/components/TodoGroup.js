@@ -8,7 +8,6 @@ function TodoGroup() {
     const todoIds = useSelector(selectTodoIds);
     return (
         <React.Fragment>
-            <h1>Todo List</h1>
             <div>
             {
                 todoIds.map(id => (
