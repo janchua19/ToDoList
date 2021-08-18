@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { updateTodo } from '../../apis/todos';
 import {selectTodoById, ToggleTodo, DeleteTodo } from "../reducers/todosSlice";
 import "../styles/TodoItem.css";
 
@@ -8,7 +9,9 @@ function TodoItem(props) {
     const dispatch = useDispatch();
 
     function handleClick() {
-        dispatch(ToggleTodo(props.itemId))
+        updateTodo(props.itemId, {done: !todo.done}).then(() => {
+            dispatch(ToggleTodo(props.itemId));
+        });
     }
 
     function onClickDelete(event) {
