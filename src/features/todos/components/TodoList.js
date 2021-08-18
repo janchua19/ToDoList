@@ -15,7 +15,6 @@ import { AddTodos } from '../reducers/todosSlice';
 
         useEffect(() => {
             getTodos().then((response) => {
-                console.log("responde data:", response.data);
                 dispatch(AddTodos(response.data));
             })
         }, [])

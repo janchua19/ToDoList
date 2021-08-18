@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { createTodo } from '../../apis/todos';
 import { AddTodo } from '../reducers/todosSlice';
 import "../styles/TodoForm.css";
 
@@ -12,7 +13,9 @@ function TodoForm() {
     }
 
     function handleAdd() {
-        dispatch(AddTodo(text));
+        createTodo(text).then(() => {
+            dispatch(AddTodo(text));
+        });
         setText(""); //clear text field every add
     }
 

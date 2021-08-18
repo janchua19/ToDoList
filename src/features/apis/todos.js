@@ -12,6 +12,6 @@ export const updateTodo = (itemId, updateTodo) => {
     return api.put(`/todos/${itemId}`, updateTodo)
 }
 
-export const removeFromList = (itemId) => {
-    return api.delete('/todos/'+ itemId)
+export const deleteFromList = (itemId) => {
+    return api.delete(`/todos/${itemId}`)
 }

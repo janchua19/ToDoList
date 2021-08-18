@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { updateTodo } from '../../apis/todos';
+import { deleteFromList, updateTodo } from '../../apis/todos';
 import {selectTodoById, ToggleTodo, DeleteTodo } from "../reducers/todosSlice";
 import "../styles/TodoItem.css";
 
@@ -15,7 +15,9 @@ function TodoItem(props) {
     }
 
     function onClickDelete(event) {
-        dispatch(DeleteTodo(props.itemId))
+        deleteFromList(props.itemId).then(() => {
+            dispatch(DeleteTodo(props.itemId));
+        });
          event.stopPropagation();
     }
 
