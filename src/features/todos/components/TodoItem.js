@@ -13,10 +13,11 @@ function TodoItem(props) {
 
     function onClickDelete(event) {
         dispatch(DeleteTodo(props.itemId))
-        event.stopPropagation();
+         event.stopPropagation();
     }
 
     const todoStatus = todo.done ? "done" : ""; // if done will name done if not will be blank
+
 
     return (<div className = "TodoItem-Table">
             <span className= {`TodoItem-todo ${todoStatus}`} onClick = {handleClick}>{todo.text}</span>

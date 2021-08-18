@@ -2,17 +2,22 @@ import React from 'react'
 import TodoItem from './TodoItem'
 import { useSelector } from 'react-redux';
 import { selectTodoIds } from '../reducers/todosSlice';
+import TodoForm from './TodoForm';
 
 function TodoGroup() {
     const todoIds = useSelector(selectTodoIds);
     return (
-        <div>
+        <React.Fragment>
+            <h1>Todo List</h1>
+            <div>
             {
                 todoIds.map(id => (
                     <TodoItem key={id} itemId={id}/>
                 ))
             }
-        </div>
+            </div>
+            <TodoForm/>
+        </React.Fragment>
     );
 }
 
