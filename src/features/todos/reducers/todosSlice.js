@@ -1,6 +1,5 @@
 import { createSlice, createEntityAdapter, createSelector } from "@reduxjs/toolkit";
 import {v4 as uuid} from "uuid";
-import TodoItem from "../components/TodoItem";
 
 const todosAdapter = createEntityAdapter();
 const initialState = todosAdapter.getInitialState({

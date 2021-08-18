@@ -1,7 +1,7 @@
 .TodoForm{
     margin-top: 20px;
     position: fixed;
-    bottom: 125px;
+    bottom: 105px;
     background-color: #e796a0;
     padding-left: 35px;
     padding-right: 35px;
@@ -11,12 +11,12 @@
 }
 
 .Add{
-    margin-left: 5px;
+    margin-left: 10px;
     color: white;
     background-color: #246D82;
     padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
     font-size: 15px;
     border-radius: 5px;
     transition-duration: 0.4s;
@@ -32,5 +32,5 @@
     padding: 10px;
     font-size: 15px;
     border-radius: 5px;
-    width: 310px;
+    width: 810px;
 }

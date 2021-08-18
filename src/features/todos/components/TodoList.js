@@ -20,12 +20,10 @@ import { AddTodos } from '../reducers/todosSlice';
         }, [])
         
         return (
-            <React.Fragment>
                 <div className = "TodoList-Container">
                     <TodoGroup/>
                     <TodoForm className="TodoList"/>            
                 </div>
-            </React.Fragment>
         );
     };
 

@@ -1,13 +1,13 @@
 .TodoList-Container{
-    margin-top: 100px;
+    margin-top: 20px;
     background-color: #e796a0;
-    max-width:500px;
-    margin-left: 35%;
+    max-width:1000px;
+    margin-left: 20%;
     padding-top: 15px;
     padding-bottom: 30px;
     border-width: 5px;
     border-color: black;
     border-radius: 5px;
-    height: 600px;
+    height: 650px;
     overflow: auto;
 }

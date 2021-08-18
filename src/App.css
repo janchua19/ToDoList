@@ -6,6 +6,18 @@ body{
   background-color: #e6b4b0;
 }
 
+#components-layout-demo-fixed .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.2);
+}
+.site-layout .site-layout-background {
+  background: #e6b4b0;
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
