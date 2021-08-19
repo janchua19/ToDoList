@@ -10,11 +10,7 @@ const todosSlice = createSlice({
     initialState: initialState,
     reducers: {
         AddTodo(state, action) {
-            todosAdapter.addOne(state, {
-                id: uuid(),
-                text: action.payload,
-                done: false,
-            });
+            todosAdapter.addOne(state, action.payload);
         },
         ToggleTodo(state, action) {
             const todo = state.entities[action.payload]

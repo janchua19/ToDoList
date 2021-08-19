@@ -14,8 +14,8 @@ function TodoForm() {
 
     function handleAdd() {
         if(text)
-            createTodo(text).then(() => {
-                dispatch(AddTodo(text));
+            createTodo(text).then((response) => {
+                dispatch(AddTodo(response.data));
             });
             setText(""); //clear text field every add
     }
