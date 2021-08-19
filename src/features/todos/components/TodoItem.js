@@ -9,16 +9,16 @@ function TodoItem(props) {
     const dispatch = useDispatch();
 
     function handleClick() {
-        updateTodo(props.itemId, {done: !todo.done}).then(() => {
-            dispatch(ToggleTodo(props.itemId));
+        updateTodo(props.itemId, {done: !todo.done}).then((response) => {
+            dispatch(ToggleTodo(props.itemId, response.data));
         });
     }
 
     function onClickDelete(event) {
-        deleteFromList(props.itemId).then(() => {
-            dispatch(DeleteTodo(props.itemId));
+        event.stopPropagation();
+        deleteFromList(props.itemId).then((response) => {
+            dispatch(DeleteTodo(props.itemId, response.data));
         });
-         event.stopPropagation();
     }
 
     const todoStatus = todo.done ? "done" : ""; // if done will name done if not will be blank

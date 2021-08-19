@@ -8,6 +8,12 @@
     border-width: 5px;
     border-color: black;
     border-radius: 5px;
-    height: 650px;
+    height: 600px;
     overflow: auto;
+}
+
+.TodoList-Header{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #001529;
 }

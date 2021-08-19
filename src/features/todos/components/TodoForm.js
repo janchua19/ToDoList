@@ -13,10 +13,11 @@ function TodoForm() {
     }
 
     function handleAdd() {
-        createTodo(text).then(() => {
-            dispatch(AddTodo(text));
-        });
-        setText(""); //clear text field every add
+        if(text)
+            createTodo(text).then(() => {
+                dispatch(AddTodo(text));
+            });
+            setText(""); //clear text field every add
     }
 
     return (

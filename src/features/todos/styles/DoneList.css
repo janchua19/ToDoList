@@ -11,3 +11,9 @@
     height: 650px;
     overflow: auto;
 }
+
+.DoneList-Header{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #001529;
+}

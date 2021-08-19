@@ -17,13 +17,16 @@ import { AddTodos } from '../reducers/todosSlice';
             getTodos().then((response) => {
                 dispatch(AddTodos(response.data));
             })
-        }, [])
+        }, [dispatch])
         
         return (
+            <React.Fragment>
+                <ul className="TodoList-Header">Todo List</ul>
                 <div className = "TodoList-Container">
                     <TodoGroup/>
                     <TodoForm className="TodoList"/>            
                 </div>
+            </React.Fragment>
         );
     };
 

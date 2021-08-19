@@ -10,13 +10,16 @@ function DoneList()
 {
     const doneList = useSelector(selectDoneList);
     return (
-        <div className="DoneList-Container">
-        {  
-            doneList.map(todo => (
-                <TodoItem key={todo.id} itemId={todo.id}/>
-            ))
-        }
-        </div>
+        <React.Fragment>
+            <ul className="DoneList-Header">Done List</ul>
+            <div className="DoneList-Container">
+            {   
+                doneList.map(todo => (
+                    <TodoItem key={todo.id} itemId={todo.id}/>
+                ))
+            }
+            </div>
+        </React.Fragment>
     )
 }
 export default DoneList;
